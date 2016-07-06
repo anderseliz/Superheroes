@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <%= render layout="layouts/bootstrap"%>
 </head>
-<body>
+<body class="<%= "#{@body_class}".strip %>">
 <%= render layout="layouts/navbar"%>
 <%= yield %>
 
