@@ -1,0 +1,16 @@
+$(document).ready(function(){
+	alert("ready")
+	if ($(".page1")[0]){
+		var tiempo = 300*1000;
+		if (getURLParameter("segundos") != null){
+			tiempo = getURLParameter("segundos") * 1000;
+		}
+		setInterval(function(){
+			alert("hola!");
+		},tiempo);
+	}
+});
+getURLParameter = function (name) {
+	return decodeURIComponent((new RegExp('[?|&]' + name + '=' +
+	'([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+};

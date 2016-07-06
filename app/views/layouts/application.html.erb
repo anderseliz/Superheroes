@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <%= render layout="layouts/bootstrap"%>
 </head>
-<body class="<%= "#{@body_class}".strip %>">
+<body class="<%= "#{@body_class}".strip %>" data-no-turbolink="<%= "#{@body_turbo}".strip %>">
 <%= render layout="layouts/navbar"%>
 <%= yield %>
 
