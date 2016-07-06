@@ -5,18 +5,11 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= render layout="layouts/bootstrap"%>
 </head>
 <body>
-
+<%= render layout="layouts/navbar"%>
 <%= yield %>
-
-<div>
-	<h1>New Voto</h1>
-
-	<%= render 'votos/form' %>
-
-	<%= link_to 'Back', votos_path %>
-</div>
 
 </body>
 </html>

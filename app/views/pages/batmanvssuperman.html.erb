@@ -12,6 +12,13 @@
 <div id="superman" style="display:block;width:50%;height:100%;float:left">
 	<%= link_to "Superman",pages_superman_path, :style => "color:white;"%>
 </div>
+<div>
+	<h1>New Voto</h1>
+
+	<%= render 'votos/form' %>
+
+	<%= link_to 'Back', votos_path %>
+</div>
 
 <script type="text/javascript">
 	$("document").ready(function(){
