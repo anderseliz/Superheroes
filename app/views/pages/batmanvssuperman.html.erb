@@ -1,0 +1,21 @@
+<style type="text/css">
+	html,body{
+		height: 100%;
+		width:100%;
+		margin: 0px;
+	}
+</style>
+<h1 style="width:100%;text-align:center">Batman vs. Superman</h1>
+<div id="batman" style="display:block;width:50%;height:100%;float:left">
+	<%= link_to "Batman", pages_batman_path, :style => "color:white;"%>
+</div>
+<div id="superman" style="display:block;width:50%;height:100%;float:left">
+	<%= link_to "Superman",pages_superman_path, :style => "color:white;"%>
+</div>
+
+<script type="text/javascript">
+	$("document").ready(function(){
+		$("#batman").backstretch("http://pre08.deviantart.net/e9dc/th/pre/i/2013/117/f/a/batman___desktop_by_mcinek97-d636xrw.jpg");
+		$("#superman").backstretch("http://i1100.photobucket.com/albums/g411/stcv66/stcv66wangzan/stcv661176_zps89972dca.jpg~original");
+	});
+</script>
